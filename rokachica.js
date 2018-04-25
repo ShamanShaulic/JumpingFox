@@ -135,8 +135,8 @@ function assetLoaded() {
 
 	opossum = new PIXI.extras.AnimatedSprite(opossumArray);
 	opossum.x = app.screen.width + Math.floor(Math.random() * app.screen.width);
-    opossum.y = app.screen.height * 5 / 6 - opossum.height;
-    opossum.anchor.set(0.5);
+   	opossum.y = app.screen.height * 5 / 6 - opossum.height;
+   	opossum.anchor.set(0.5);
 	opossum.animationSpeed = framerate;
 	opossum.scale.set(foxSize);
 	opossum.play();
@@ -156,13 +156,6 @@ function assetLoaded() {
 	diamond.animationSpeed = framerate * 1.5;
 	diamond.scale.set(foxSize);
 	diamond.play();
-
-	// var sky = PIXI.Texture.fromImage('assetica/back.png');
-	// var tilingSprite = new PIXI.extras.TilingSprite(
-	// 	sky,
-	// 	app.screen.width
-	// 	);
-	// tilingSprite.position.set(0, app.screen.height - app.screen.height/6);
 
 
 
@@ -297,7 +290,6 @@ function assetLoaded() {
 	app.stage.addChild(scoreText);
 	app.stage.addChild(platformLong);
 	app.stage.addChild(platformShort);
-	app.stage.addChild(cherry);
 	app.stage.addChild(diamond);
 	app.stage.addChild(opossum);
 	app.stage.addChild(eagle);
